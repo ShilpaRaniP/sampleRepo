@@ -39,6 +39,7 @@ public class BaseClass {
 	public void configBS()
 	{
 		System.out.println("=====connect to DB , Report Config=====");
+		System.out.println("======connected======");
 		dbLib.getDBConnection();
 	}
 	
