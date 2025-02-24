@@ -14,8 +14,8 @@ public class DataBaseUtility
 	public void getDBConnection(String url, String username, String password)
 	{
 		try {
-				Driver driver=new Driver();
-				DriverManager.registerDriver(driver);
+///				Driver driver=new Driver();
+///				DriverManager.registerDriver(driver);
 				conn=DriverManager.getConnection(url, username, password);
 			} catch(Exception e) {
 			}
@@ -24,8 +24,8 @@ public class DataBaseUtility
 	public void getDBConnection()
 	{
 		try {
-			Driver driver=new Driver();
-			DriverManager.registerDriver(driver);
+///			Driver driver=new Driver();
+///			DriverManager.registerDriver(driver);
 			conn=DriverManager.getConnection("jdbc:mysql://49.249.28.218:3333/ninza_hrm", "root", "root");
 		} catch(Exception e) {
 		}

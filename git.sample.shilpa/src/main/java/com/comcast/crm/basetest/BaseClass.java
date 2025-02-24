@@ -86,6 +86,7 @@ public class BaseClass {
 		System.out.println("=====LOGOUT=====");
 		Home_Page hp=new Home_Page(driver);
 		hp.signOut(driver);
+		System.out.println("=====LOGGED OUT=====");
 	}
 		
 	@AfterClass(alwaysRun = true)
