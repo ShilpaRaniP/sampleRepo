@@ -94,7 +94,7 @@ public class BaseClass {
 	{
 		System.out.println("=====close the BROWSER=====");
 		driver.quit();
-		System.out.println("After class updated");
+		System.out.println("After class updated =====");
 	}
 	
 	@AfterSuite(alwaysRun = true)
