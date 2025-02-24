@@ -100,6 +100,7 @@ public class BaseClass {
 	{
 		System.out.println("=====close DB , Report BackUP=====");
 		dbLib.closeDBConnection();
+		System.out.println("After suite updated");
 	}
 	
 }
