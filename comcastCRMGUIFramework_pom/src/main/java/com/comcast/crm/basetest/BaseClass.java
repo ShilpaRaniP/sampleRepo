@@ -39,7 +39,6 @@ public class BaseClass {
 	public void configBS()
 	{
 		System.out.println("=====connect to DB , Report Config=====");
-		System.out.println("======connected======");
 		dbLib.getDBConnection();
 	}
 	
@@ -87,7 +86,6 @@ public class BaseClass {
 		System.out.println("=====LOGOUT=====");
 		Home_Page hp=new Home_Page(driver);
 		hp.signOut(driver);
-		System.out.println("=====LOGGED OUT=====");
 	}
 		
 	@AfterClass(alwaysRun = true)
@@ -95,7 +93,6 @@ public class BaseClass {
 	{
 		System.out.println("=====close the BROWSER=====");
 		driver.quit();
-		System.out.println("After class updated =====$$$$");
 	}
 	
 	@AfterSuite(alwaysRun = true)
@@ -103,7 +100,6 @@ public class BaseClass {
 	{
 		System.out.println("=====close DB , Report BackUP=====");
 		dbLib.closeDBConnection();
-		System.out.println("After suite updated,...");
 	}
 	
 }
